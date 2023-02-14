@@ -1,5 +1,6 @@
 title: Volland API Documentation
 description: Documentation for the Volland API
-theme: just-the-docs
+#theme: just-the-docs
+remote_theme: "pmarsceill/just-the-docs"
 
 url: https://aureumai.github.io
