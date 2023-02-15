@@ -22,23 +22,25 @@ Your API key is passed in the request headers under the "x-api-key".
 
 #### Greek Exposure
 
-**GET** {: .label } _/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
+**GET**
+{: .label } 
+
+_/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
 
 Get the greek exposure for a given ticker-greek combo.
 
 ##### Parameters
 
-|:-----|:--------------------------------------|
-|greek {: .label .label-green }| any of the greeks available on volland|
-|:-----|:--------------------------------------|
 
-|:-----|:---------------------------------------|
-|ticker {: .label .label-green }| any of the ticker available on volland|
-|:-----|:---------------------------------------|
+| greek {: .label .label-green } | any of the greeks available on volland|
+
+
+| ticker {: .label .label-green } | any of the ticker available on volland|
+
 
 ##### Response Object
 
-`
+```
 {
 	"ticker": "AAPL",
 	"greek": "charm",
@@ -47,4 +49,4 @@ Get the greek exposure for a given ticker-greek combo.
 		...
 	} 
 }
-`
+```
