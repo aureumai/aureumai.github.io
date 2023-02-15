@@ -24,19 +24,19 @@ ____________________________________________________________________________
 
 #### Greek Exposure
 
-**GET** {: .label } 
+**GET** _/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
+{: .label } 
 
-_/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
 
 Get the greek exposure for a given ticker-greek combo.
 
 ##### Parameters
 
 
-| greek {: .label .label-green } | any of the greeks available on volland|
+| **greek**  | any of the greeks available on volland|
 
 
-| ticker {: .label .label-green } | any of the ticker available on volland|
+| **ticker** | any of the ticker available on volland|
 
 
 ##### Response Object
