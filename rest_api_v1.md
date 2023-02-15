@@ -20,10 +20,11 @@ Your API key is passed in the request headers under the "x-api-key".
 
 `"x-api-key": "YOUR-API-KEY"`
 
+____________________________________________________________________________
+
 #### Greek Exposure
 
-**GET**
-{: .label } 
+**GET** {: .label } 
 
 _/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
 
@@ -40,7 +41,7 @@ Get the greek exposure for a given ticker-greek combo.
 
 ##### Response Object
 
-```
+```json
 {
 	"ticker": "AAPL",
 	"greek": "charm",
