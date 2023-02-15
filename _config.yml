@@ -4,3 +4,13 @@ description: Documentation for the Volland API
 remote_theme: "pmarsceill/just-the-docs"
 
 url: https://aureumai.github.io
+
+nav_external_links:
+  - title: Volland
+    url: https://www.vol.land
+    hide_icon: true
+
+  - title: Volland Terms of Service
+    url: https://www.vol.land/tos
+    hide_icon: true
+
