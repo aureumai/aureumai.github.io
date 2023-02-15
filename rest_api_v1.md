@@ -12,8 +12,6 @@ The following endpoints are available in the Volland v1 Rest API.
 
 `https://api.vol.land/greek-exposure`
 
-### Get Greek Exposure
-
 #### Authentication
 
 Your API key is passed in the request headers under the "x-api-key".
@@ -25,7 +23,6 @@ ____________________________________________________________________________
 #### Greek Exposure
 
 **GET** _/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
-{: .label } 
 
 
 Get the greek exposure for a given ticker-greek combo.
