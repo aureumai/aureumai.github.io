@@ -10,28 +10,24 @@ The following endpoints are available in the Volland v1 Rest API.
 
 **Base URL:**
 
-`https://api.vol.land/greek-exposure`
+`https://p9w2ycklv5.execute-api.us-east-1.amazonaws.com/beta`
 
 #### Authentication
 
-Your API key is passed in the request headers under the "x-api-key".
+For testing purposes, your JWT key is passed in the request headers under the "authorization". Normally that key would be passed by the FE whenever data is called.
 
-`"x-api-key": "YOUR-API-KEY"`
+`"authorization": "jwt-key"`
 
 ____________________________________________________________________________
 
-#### Greek Exposure
+#### 
 
-**GET** _/volland-greek-exposure?greek={desired-greek}&ticker={desired-ticker}_
+**GET** _/volland-live-api-strikes?ticker{desired-ticker}_
 
 
-Get the greek exposure for a given ticker-greek combo.
+Get the list of strikes and expirations for a given ticker.
 
 ##### Parameters
-
-
-| **greek**  | any of the greeks available on volland|
-
 
 | **ticker** | any of the ticker available on volland|
 
@@ -41,10 +37,9 @@ Get the greek exposure for a given ticker-greek combo.
 ```json
 {
 	"ticker": "AAPL",
-	"greek": "charm",
-	"exposure": {
-		"230217": {"100": {"call": 0, "put": 0}},
-		...
+	{
+		"strikes": [10, 15, 20, ...]
+		"expirations": [\"2024-12-20\", \"2023-06-16\", \"2023-12-29\",...]
 	} 
 }
 ```
