@@ -69,3 +69,29 @@ Get the exposure for the requested ticker
 	} 
 }
 ```
+
+
+____________________________________________________________________________
+
+#### 
+
+**GET** _/volland-live-api-agg_charm?ticker={desired-ticker}_
+
+
+Get the aggregate charm exposure for the requested ticker
+
+##### Parameters
+
+| **ticker** | any of the ticker available on volland|
+
+
+##### Response Object
+
+```json
+{
+	"SPY": {
+		"agg_charm": 103638757.20335546, 
+		"last_update": 1679411110
+	}
+}
+```
