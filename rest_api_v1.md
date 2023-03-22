@@ -95,3 +95,35 @@ Get the aggregate charm exposure for the requested ticker
 	}
 }
 ```
+
+
+____________________________________________________________________________
+
+#### 
+
+**GET** _/volland-live-api-gamma_exposure_strike?ticker={desired-ticker}&underlying={590.0}_
+
+
+This one is a bit unique. If you provide it with a ticker and a 'strike' that you want considered as the underlying, hypothetically, it will return the institutional DAG and Gamma exposure for that case.
+
+##### Parameters
+
+| **ticker** | any of the ticker available on volland|
+| **underlying** | hypothetical strike to consider as the underlying
+
+
+##### Response Object
+
+```json
+{
+	"ticker": "SPY",
+	"underlying": 590,
+	"exposure": {"dag": {
+							('230317', 150.0, 'call'):0.0,
+							('230317', 150.0, 'put'):0.0,
+							('230317', 160.0, 'call'):0.0,
+							...
+						}
+				}
+}
+```
