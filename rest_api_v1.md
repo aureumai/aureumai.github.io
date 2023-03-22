@@ -127,3 +127,28 @@ This one is a bit unique. If you provide it with a ticker and a 'strike' that yo
 				}
 }
 ```
+
+
+____________________________________________________________________________
+
+#### 
+
+**GET** _/volland-live-api-iv_plane?ticker={desired-ticker}&expiration={230324}_
+
+
+Provide this endpoint a ticker and a valid expiration formatted as %y%m%d and it will return the up to date implied volatility curve (assumes that all options are calls).
+
+##### Parameters
+
+| **ticker** | any of the ticker available on volland|
+| **expiration** | valid expiration formatted as %y%m%d
+
+
+##### Response Object
+
+```json
+{
+	"407.5": 0.7195438476477075, "515.0": 8.038407576373348, "520.0": 8.341895137815069, "525.0": 8.642634558075518, "530.0": 8.940680217021107,
+	"535.0": 9.23608472511681, ..., "update_timestamp": 1679511791
+}
+```
