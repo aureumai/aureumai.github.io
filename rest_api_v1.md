@@ -47,26 +47,39 @@ ____________________________________________________________________________
 
 #### 
 
-**GET** _/volland-live-api-exposure?ticker={desired-ticker}_
+**GET** _/volland-live-api-exposure?ticker={desired-ticker}&greek={desired_greek}&expirations={}&kind={kind}_
 
 
 Get the exposure for the requested ticker
 
 ##### Parameters
 
-| **ticker** | any of the ticker available on volland|
+| **ticker**      | Any of the ticker available on volland| 'SPY'                             |
+| **greek**       | The desired greek                     | 'charm'                           |
+| **expirations** | A list of expirations or *            | '*', ["2023-03-31", "2023-04-06"] |
+| **kind**        | Designate call or put                 | 'call', 'put', or '*'             |
 
 
 ##### Response Object
 
 ```json
 {
-	"ticker": "AAPL",
-	"greek": "charm",
-	"exposure": {
-		"230217": {"100": {"call": 0, "put": 0}},
-		...
-	} 
+  "statusCode": 200,
+  "body": {"SPY": 
+  			{"exposure": 
+  				{"charm": 
+  					{"230331": 
+  						{"255.0": {"call": 1854.5504258826006},
+  						 "260.0": {"call": -3090.917376471003},
+  						 "265.0": {"call": -6800.0182282362075},
+  						 "270.0": {"call": -2472.7339011768026},
+  						 ...
+  						}
+  					}
+  				}
+  			}
+		"underlying": 402.5,
+  		"last_update": timestamp
 }
 ```
 
