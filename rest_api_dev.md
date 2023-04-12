@@ -192,3 +192,28 @@ Provide this endpoint a ticker and it will return the EOD status for that ticker
 		"vega_exp": 0.1499460067449947
 }
 ```
+
+
+____________________________________________________________________________
+
+#### 
+
+**GET** _/volland-live-api-summary?ticker={desired-ticker}
+
+
+Provide this endpoint a ticker and it will return the current price, notional equity volume and most recent VIX calculation.
+
+##### Parameters
+
+| **ticker** | any of the ticker available on volland|
+
+
+##### Response Object
+
+```json
+{
+		"notionalVolume": 236719724429.53055,
+		"vix": 18.232903496278553,
+		"price": 407.63
+}
+```
