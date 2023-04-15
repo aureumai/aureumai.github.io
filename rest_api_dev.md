@@ -198,7 +198,6 @@ ____________________________________________________________________________
 
 #### 
 
-<<<<<<< HEAD
 **GET** _/volland-live-api-summary-dev?ticker={desired-ticker}
 
 Provide this endpoint a ticker and it will return the current price, notional equity volume and most recent VIX calculation.
