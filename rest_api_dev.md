@@ -198,10 +198,11 @@ ____________________________________________________________________________
 
 #### 
 
+<<<<<<< HEAD
 **GET** _/volland-live-api-summary-dev?ticker={desired-ticker}
 
+Provide this endpoint a ticker and it will return the current price, notional equity volume and most recent VIX calculation.
 
-Provide this endpoint a ticker and it will return the summary status for that ticker.
 
 ##### Parameters
 
@@ -212,7 +213,8 @@ Provide this endpoint a ticker and it will return the summary status for that ti
 
 ```json
 {
-		"notionalVolume": 240607157767.14877,
-	"vix": 17.29727502239954, "price": 413.111
+		"notionalVolume": 236719724429.53055,
+		"vix": 18.232903496278553,
+		"price": 407.63
 }
 ```
