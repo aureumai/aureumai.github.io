@@ -10,7 +10,7 @@ The following development endpoints are available in the Volland v1 Rest API.
 
 **Base URL:**
 
-`https://p9w2ycklv5.execute-api.us-east-1.amazonaws.com/beta`
+`https://gtioutaqt3.execute-api.us-east-1.amazonaws.com/v1`
 
 #### Authentication
 
@@ -171,7 +171,7 @@ ____________________________________________________________________________
 
 #### 
 
-**GET** _/volland-live-api-eod?ticker={desired-ticker}
+**GET** _/volland-live-api-eod-dev?ticker={desired-ticker}
 
 
 Provide this endpoint a ticker and it will return the EOD status for that ticker.
@@ -190,5 +190,29 @@ Provide this endpoint a ticker and it will return the EOD status for that ticker
 		"theta_exp": 99.77985528692405,
 		"delta_exp": 64.26425897855798,
 		"vega_exp": 0.1499460067449947
+}
+```
+
+
+____________________________________________________________________________
+
+#### 
+
+**GET** _/volland-live-api-summary-dev?ticker={desired-ticker}
+
+
+Provide this endpoint a ticker and it will return the summary status for that ticker.
+
+##### Parameters
+
+| **ticker** | any of the ticker available on volland|
+
+
+##### Response Object
+
+```json
+{
+		"notionalVolume": 240607157767.14877,
+	"vix": 17.29727502239954, "price": 413.111
 }
 ```
